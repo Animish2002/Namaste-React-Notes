@@ -1,0 +1,44 @@
+notes for namaste react 
+prequisites
+html , javascript
+
+1. Emmet
+2. cdns
+3. write html with the help of javascript
+
+<div id="root"></div> <!-- This creates an empty <div> element with the id "root". -->
+
+<script>
+    const heading = document.createElement("h1"); <!-- This creates a new <h1> element in memory. -->
+    heading.innerHTML ="Hello from javascript!!!"; <!-- This sets the text inside the <h1> element to "Hello from javascript!!!". -->
+
+    const root = document.getElementById("root"); <!-- This retrieves the <div> element with the id "root" from the HTML. -->
+    root.appendChild(heading); <!-- This appends the newly created <h1> element as a child of the <div id="root"> element. -->
+</script>
+
+
+createElement ==> to create an html element in react
+ReactDom ==>  add the elements created in react to the web browser
+
+
+react cdn links ==>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<!-- This script tag loads the React library from the provided URL with the crossorigin attribute. -->
+
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- This script tag loads the ReactDOM library from the provided URL with the crossorigin attribute. -->
+
+React within html with plane js
+<script>
+  const heading = React.createElement("h1", {}, "hello world from React!!");
+  // This creates a new React element <h1> with the text "hello world from React!!".
+
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  // This creates a root ReactDOM object that represents the rendering root of your React application,
+  // and it is attached to the DOM element with the id "root".
+
+  root.render(heading);
+  // renders the React element "heading" into the root ReactDOM object, which will display "hello world from React!!" inside the element with the id "root".
+</script>
+
+ReacteElement  is nothing but an object  and this element becomes HTML when rendered in the browser
