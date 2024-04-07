@@ -1,0 +1,42 @@
+bundler
+parcel , vite , web pack  (this are bundlers)
+bundles the code the app to push into production
+npm create command uses webpack as default
+
+caret and tilde in package.json(^,~)
+
+
+parcel command to run =>  npx parcel index.html
+
+////////////////////////////////////////////Error Faced //////////////////////////
+🚨 Parcel encountered errors
+@parcel/transformer-js: Browser scripts cannot have imports or exports.
+C:\NamasteReact\App.js:1:1
+> 1 | import React from "react";
+>   | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import ReactDOM from "react-dom";
+  3 | C:\NamasteReact\index.html:22:5
+  21 | 
+> 22 |     <script src="./App.js" ;></script>
+>    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ The environment was originally created here
+  23 |   </body>
+  24 | </html>
+
+    Add the type="module" attribute to the <script> tag.
+
+📝 Learn more
+
+browser does not understand import or export statement
+to reslove that we need to change it to module so that browser
+understands it as a module   type="module"  --in index.html
+
+Example  : pm is react  , amit shah is parcel  and they need to be together 
+so that they can work correclty and the minister are the differnt packages
+
+
+
+/// BrowsersList (it should work on all the browser with all the versions in it)
+
+
+
+in this we created our own create react app through parcel 🚨 🚨 🚨 🚨 🚨 
