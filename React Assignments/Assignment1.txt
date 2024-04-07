@@ -1,0 +1,40 @@
+1. what is Emmet?
+=> Emmet is a set of plug-ins for text editors that allows 
+for high-speed coding and editing in HTML, XML, XSLT, and other 
+structured code formats via content assist. 
+
+2. Difference between a Library and Framework?
+=> A library is like a toolbox full of ready-made tools that you can use when you need 
+them, while a framework is like a set of rules telling you how to build something, 
+kind of like a LEGO instruction manual.
+
+3. What is CDN? Why do we use it?   (system of distributed servers that deliver web content )
+=> content delivery network, for content delivery through the entire network throughout the globe
+
+4. why is react called as "React"?
+=> The name "React" comes from its core concept of "reactive" updates. 
+When the data that a React component depends on changes, React efficiently updates only
+ the parts of the user interface that need to change, rather than re-rendering the 
+ entire page. This reactive approach to UI updates is where the name "React" comes from.
+
+ 5.  What is crossorigin in script tag?
+ => so that it can be shared with anyone through the links 
+
+ 6. What is diference between React and ReactDOM
+ => ReactDOM is for rendering React components in the DOM (Document Object Model), which 
+ is the structure that represents a webpage in the browser. ReactDOM provides 
+ methods for rendering React components into HTML elements and updating them when the 
+ underlying data changes.  while react is js library
+
+ 7. What is difference between react.development.js and react.production.js files via CDN?
+ => React.development.js: This version of React is meant for development purposes. It includes 
+    helpful warnings and error messages in the console that can assist developers in debugging and 
+    understanding potential issues with their code. However, it is larger in file size due to the 
+    additional development tools it contains.
+
+    React.production.js: This version of React is optimized for production use. It does not include 
+    the extra warnings and debugging tools, which makes it smaller in file size. This smaller size 
+    is beneficial for performance since smaller files load faster for users visiting your website.
+
+8. What is asyn and differ?
+=> 
