@@ -1,0 +1,81 @@
+scripts creation
+start= "parcel index.html"
+build= "parcel build index.html"
+"test"= "jest"
+
+run commands = npm start or npm run start
+
+jsx is not html inside javascript
+
+//JSX to React.createElement to ReactElement-JS Object to HTMLElement(render)
+
+JSX (transpiled before it reaches the JS) - PARCEL - Babel
+
+Babel converts jsx to React.createElement(js library )
+
+Babel is a JavaScript compiler (current es6 module)
+ toolchain that is mainly used to convert ECMAScript 2015+ code into a 
+ backwards compatible version of JavaScript in current and older browsers or environments.
+
+ example from 
+ const heading = <h1>Namaste React!!!</h1>  converted to 
+
+
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "hello world from h1 tag!!"
+);
+
+const headline = <h1 id="heading"> "Hello World!!! from jsx"</h1>  //this is jsx 
+//JSX to React.createElement to ReactElement-JS Object to HTMLElement(render)
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(headline);
+// root.render(heading);
+
+*******while giving attributes to jsx use camelCase*******
+
+
+
+React pages are full of react components (header, sidebar , footer or images buttons etc etc.......!)
+
+component composition =>composiing 2 components into one another
+
+
+
+
+Code////////////////////////////=>
+import React from "react";
+import ReactDOM from "react-dom";
+
+const jsxHeading = <h1>Hello from Jsx for react!!!</h1>;
+
+//React Element
+const headline = <h1 id="heading"> "Hello World!!! from jsx"</h1>; //this is jsx
+//JSX to React.createElement to ReactElement-JS Object to HTMLElement(render)
+
+//React FunctionalComponent
+const JsxHeading2 = () => (
+  <div className="container">
+    <h1 className="heading">Hello from functional component....!!!</h1>
+    <JsxHeading3/>
+
+  </div>
+);
+////////////////////////Component Composition is adding the <JsxHeading3/> inside JsxHeading2/////////////////////
+//////or/////
+const JsxHeading3 = () => {
+  return(
+    <div className="container">
+      <h1> hello from react component for return statement!!!</h1>
+    </div>
+  )
+}
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<JsxHeading2 />);
+
+
+// root.render(heading);

@@ -1,30 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import logo from "./Images/logo.png";
 
-
-// const heading = React.createElement(
-//   "h1",
-//   { id: "heading", xyz: "kinee" },
-//   "hello world from h1 tag!!"
-// );
-
-
-
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "Hey there from H1 tag!!!"),
-    React.createElement("h2", {}, "Hey there from H2 tag!!!"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "Hey there from H1 tag!!!"),
-    React.createElement("h2", {}, "Hey there from H2 tag!!!"),
-    React.createElement("h2", {}, "Hey there whats up baby girl!!!"),
-
-  ]),
-]);
-
-console.log(parent);
-
+const Header = () => {
+  return (
+    <div className="header-components">
+      <img src={logo} alt="food app logo" />
+      
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact-Us</li>
+        <li>Cart</li>
+      </ul>
+    </div>
+  );
+};
+const Footer = () => {
+  return <div>This is the footer</div>;
+};
+const Layout = () => {
+  return (
+    <div>
+      <Header />
+     
+    </div>
+  );
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<Layout />);
+
+// root.render(heading);
