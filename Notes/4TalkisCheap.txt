@@ -1,0 +1,11 @@
+props are normal argumnets to javascript function
+props = property
+
+conflict driven UI
+
+optional chaining
+
+
+********************map reduce filter***********************
+
+props passing and concepts regarding that

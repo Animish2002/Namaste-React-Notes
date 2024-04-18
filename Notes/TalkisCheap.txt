@@ -1,4 +1,0 @@
-props are normal argumnets to javascript function
-
-
-conflict driven UI

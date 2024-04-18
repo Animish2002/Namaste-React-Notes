@@ -14,38 +14,45 @@ h1{
     display: flex;
     list-style-type: none ;
 }
+
 .food-app-logo{
     width: 170px;
     padding: 10px;
     mix-blend-mode: multiply;
     background-color: white;
 }
+
 .header-components >ul >li{
     padding: 10px;
     margin: 10px;
     font-size: 24px;
-}.res-info {
-    margin-left: 10px;
-  }
-  
-  .res-Container {
-    display: inline-block; /* Changed from 'flex' to 'inline-block' */
-    height: 370px;
-    width: 230px;
-    border-radius: 5px;
-    margin-left: 25px;
-    margin-top: 35px;
-    box-shadow: 10px -7px 55px 6px rgba(0, 0, 0, 0.1);
-    background: #ced4da;
-  }
-  
-  .res-Container:hover {
-    border: solid 2px;
-  }
-  
-  .res-foods {
-    padding-top: 5px;
-    margin: 10px;
-    width: 200px;
-  }
-  
+}
+
+.res-info {
+  margin-left: 10px;
+}
+
+.res-Container{
+  display: inline-flex;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.restaurant {
+  width: 240px;
+  height: 460px;
+  border-radius: 5px;
+  margin-top: 35px;
+  box-shadow: 10px -7px 55px 6px rgba(0, 0, 0, 0.1);
+  background: #ced4da;
+}
+
+.restaurant:hover {
+  cursor: pointer;
+  border: solid 2px;
+}
+
+.res-foods {
+  margin: 10px;
+  padding: 5px 10px 0px 10px;
+}
