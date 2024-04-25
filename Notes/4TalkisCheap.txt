@@ -9,3 +9,9 @@ optional chaining
 ********************map reduce filter***********************
 
 props passing and concepts regarding that
+
+
+
+react using keys as index is a bad practice for map in react / javascript
+
+not using keys (not accepteable ) <<<<<<<<<<<< index as key <<<<<<<<<<<<<< unique id  (best practice)
