@@ -14,6 +14,17 @@ https://medium.com/@AbidKazmi/all-react-hooks-in-one-short-4b0ed4b5a6e4
 
 
 //state variable declaration
-  const [restaurantList] = useEffect([]);
+  const [restaurantList] = useEffect([]);   // this is nothing but array distructuring 
 
 when ever the state variable updates the react rerenders(updates the ui) the component
+
+
+///////Important concepts of react
+The React Algorithm => it uses React Reconciliation Algorithm(also known as React Fiber)
+
+React (Virtual-DOM)=> Not an actual DOM , but it just the representation of an actual DOM (object)
+
+Diff Algorithm => It differentiates between the updated virtal dom and the previous virtual dom
+
+Why react is fast?
+bcoz it does efficient DOM manipulation, how? bcoz it has a virtual DOM , 
