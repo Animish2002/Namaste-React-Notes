@@ -17,3 +17,13 @@
 - Error Handling
 - Https works
 - Tree Shaking - removes unsed code from the react app
+
+
+2 typed of export and import 
+1 . default
+import "component name" from "path"
+export default "component"
+
+2 
+export const component;
+import {component} from "path "

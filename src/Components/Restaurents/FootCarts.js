@@ -1,3 +1,4 @@
+import { CON_URL } from "../../utils/contents";
 
 const FoodCarts = (props) => {
   const { resData } = props;
@@ -10,10 +11,7 @@ const FoodCarts = (props) => {
       <div className="restaurant">
         <img
           className="res-foods"
-          src={
-            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-            cloudinaryImageId
-          }
+          src={CON_URL +cloudinaryImageId}
           alt="res-foods"
           style={{ width: "200px", height: "200px" }} // Adjust width and height as needed
         />
@@ -28,6 +26,5 @@ const FoodCarts = (props) => {
     </div>
   );
 };
-
 
 export default FoodCarts;

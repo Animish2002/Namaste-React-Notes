@@ -1,0 +1,19 @@
+ui layer and data layer work together in react they go hand in hand
+react is fast bcoz it has faster dom manipulation
+
+showing data with the ui dynamically it can be done with react hooks 
+
+different react hooks => "normal js function which is provided by react (pre-built) written by facebook developers"
+-useState() => superpowerfull react variables  (used to create state variables why state varible the name 
+bcoz it maintains the state of the application/component)
+
+-useEffect()
+
+-All react hooks =>
+https://medium.com/@AbidKazmi/all-react-hooks-in-one-short-4b0ed4b5a6e4
+
+
+//state variable declaration
+  const [restaurantList] = useEffect([]);
+
+when ever the state variable updates the react rerenders(updates the ui) the component
