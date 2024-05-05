@@ -1,0 +1,10 @@
+load => render => Apicall => reRender  api and ui data flow 
+useEffect 
+declaration
+useEffect( () => {} , []);   //useEffect is a function where it has 2 arguments a callback function and a dependancy array
+
+Important//////
+Optional Chaning =>
+
+
+Shimmer ui => load a fake page until we get the data through api (showing skelton of the cards or any other ui)

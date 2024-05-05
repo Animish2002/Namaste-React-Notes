@@ -1049,5 +1049,4 @@ const resObj = [
   },
 ];
 
-
 export default resObj;
