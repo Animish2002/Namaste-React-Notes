@@ -4,7 +4,18 @@ declaration
 useEffect( () => {} , []);   //useEffect is a function where it has 2 arguments a callback function and a dependancy array
 
 Important//////
-Optional Chaning =>
+Optional Chaining =>
 
 
 Shimmer ui => load a fake page until we get the data through api (showing skelton of the cards or any other ui)
+
+
+Change in local state variable casues react reRenders the component
+
+
+Important  //// Whenever state variable changes react  triggers a reconciliation cycle(reRenders the component) ////
+React rendering concepts
+React reconciliation cycle is triggered and it finds the difference between the 
+older virtual dom and the updated new virtual dom  (virtual dom is an object representation of the jsx(react code) )
+
+Dom munipulations in react are fast and that is because of its react fiber algorithm that is why react is fast
