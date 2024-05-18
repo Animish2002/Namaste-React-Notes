@@ -49,8 +49,10 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             // console.log(searchtext);
-            const filteredRes = restaurantList.filter((item) =>
-              item.info.name.toLowerCase().includes(searchtext.toLowerCase())
+            const filteredRes = restaurantList.filter((restaurants) =>
+              restaurants.info.name
+                .toLowerCase()
+                .includes(searchtext.toLowerCase())
             );
 
             setFilterRes(filteredRes);
@@ -63,7 +65,7 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             const filteredList = restaurantList.filter(
-              (item) => item.info.avgRating > 4.3
+              (restaurants) => restaurants.info.avgRating > 4.3
             );
             setRestaurantList(filteredList);
           }}
@@ -71,11 +73,12 @@ const Body = () => {
           Top Rated
         </button>
       </div>
-      {filterRes.map((item, index) => (
-        <FoodCarts key={index} resData={item} />
+      {filterRes.map((restaurants, index) => (
+        <FoodCarts key={index} resData={restaurants} />
       ))}
     </div>
   );
 };
 
 export default Body;
+

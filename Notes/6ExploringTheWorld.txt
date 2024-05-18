@@ -19,3 +19,44 @@ React reconciliation cycle is triggered and it finds the difference between the
 older virtual dom and the updated new virtual dom  (virtual dom is an object representation of the jsx(react code) )
 
 Dom munipulations in react are fast and that is because of its react fiber algorithm that is why react is fast
+
+
+Q1. what was done in this lecture?
+=>  This code is a React component that fetches data from a Swiggy API and renders a list of restaurants. 
+    It also includes a search bar and two filter buttons. 
+    The search bar allows the user to filter the list of restaurants by name, and the filter buttons filter
+    the list by rating (either all restaurants or only those with a rating above 4.3).
+
++Here is a line-by-line explanation of the code:
++
++1. The component is defined as a function called `Body`.
++
++2. Two state variables are defined using the `useState` hook: `restaurantList` and `searchtext`. 
+`restaurantList` is an array of restaurant data, 
+and `searchtext` is the text entered by the user in the search bar.
+
++3. The `useEffect` hook is used to fetch the data from the Swiggy API when the component first mounts. 
+The data is fetched from the API using the `fetch` function, and the response is converted to 
+JSON using the `json` method. The `restaurantList` state variable is then set to the fetched data.
+
++4. The `filterData` function is called when the user clicks the "Search" button. 
+It filters the `restaurantList` array using the `filter` method, and sets the 
+`filterRes` state variable to the filtered array.
+
++5. The `filterRes` state variable is an array of restaurant data that has been filtered by the user's search query.
+
++6. The component renders a search bar and two filter buttons. 
+The search bar is an `input` element with a placeholder text of "  search here.....". 
+The `onChange` event is handled by the `setSearchtext` function, which updates the `searchtext` state variable.
+
++7. The "Search" button is a `button` element with an `onClick` event handler that calls the `filterData` function.
+
++8. The "Top Rated" button is a `button` element with an `onClick` event handler that filters 
+the `restaurantList` array using the `filter` method, and sets the `restaurantList` state variable to the filtered array.
+
++9. The component then renders the filtered list of restaurants using the `FoodCarts` component. 
+The `FoodCarts` component is passed the `restaurantList` state variable as a prop, and it renders a 
+list of restaurant cards based on the data.
+
++10. The component also renders a `Shimmer` component if the `restaurantList` array is empty. 
+The `Shimmer` component is a loading indicator that is displayed while the data is being fetched from the API.
