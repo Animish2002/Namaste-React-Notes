@@ -19,6 +19,9 @@ h1{
     display: flex;
     list-style-type: none ;
 }
+.header-components >ul >li{
+  cursor: pointer;
+}
 
 .food-app-logo{
     width: 170px;

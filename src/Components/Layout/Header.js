@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../../../Images/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [loginButton, setLoginButton] = useState("Login");
@@ -9,9 +10,15 @@ const Header = () => {
       <img className="food-app-logo" src={logo} alt="food-app-logo" />
 
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact-Us</li>
+        <li>
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li>
+          <Link to={"/about"}>About</Link>
+        </li>
+        <li>
+          <Link to={"/contact"}>Contact-Us</Link>
+        </li>
         <li>Cart</li>
         <button
           className="login-btn"
@@ -23,7 +30,6 @@ const Header = () => {
         >
           {loginButton}
         </button>
-        
       </ul>
     </div>
   );

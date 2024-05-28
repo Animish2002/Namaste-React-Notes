@@ -60,3 +60,4 @@ list of restaurant cards based on the data.
 
 +10. The component also renders a `Shimmer` component if the `restaurantList` array is empty. 
 The `Shimmer` component is a loading indicator that is displayed while the data is being fetched from the API.
+
