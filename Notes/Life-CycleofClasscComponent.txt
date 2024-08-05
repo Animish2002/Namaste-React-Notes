@@ -1,0 +1,2 @@
+when  a component is been rendered on the webpage or mounted onto the webpage,
+it starts rendering the webpage

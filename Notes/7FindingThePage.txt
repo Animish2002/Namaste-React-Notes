@@ -1,0 +1,7 @@
+to navigate form one page to another use <Link> tag it only rerenders the 
+component itself instead of the whole page.
+
+eg: <Link to={"/"}> <Link/>
+
+for 
+

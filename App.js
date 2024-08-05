@@ -7,6 +7,7 @@ import Contact from "./src/Components/Contact";
 import NotFoundPage from "./src/Components/PageNotFound";
 import Body from "./src/Components/Layout/Body";
 import Header from "./src/Components/Layout/Header";
+import RestuarantMenu from "./src/Components/Restaurents/RestuarantMenu";
 
 const appRouter = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/*",
         element: <NotFoundPage />,
+      },
+      {
+        path: "/resturantMenu/:restId",
+        element: <RestuarantMenu />,
       },
     ],
   },

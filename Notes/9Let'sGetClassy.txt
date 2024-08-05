@@ -1,0 +1,32 @@
+class based components vd functional components
+
+a classed based component is where class is been declared and extends React.Component is used 
+inside which there is render method which return the jsx
+
+State and Lifecycle Methods: Class-based components can hold and manage state using this.
+state and can use lifecycle methods such as componentDidMount, componentDidUpdate, 
+and componentWillUnmount.
+
+where as for 
+
+functional based it is function that reaturns the jsx
+
+use of props in class based component
+1. declare a constructor and  pass props to it
+constructor(props){
+    super(props);
+    console.log(props);
+}
+
+to call it use {this.props.name}
+
+class based component did not hooks so how are state created
+they are create when an instance of a class is been created
+create state variables inside the constructor itself where we passed the props
+
+creating other new state must be inside the this.state only
+example:  this.state{
+    count:0,
+    count2:1,
+}
+here the state variable is a big object which contains all the state variables that are created ****important

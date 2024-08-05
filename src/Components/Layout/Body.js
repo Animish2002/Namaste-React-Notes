@@ -2,6 +2,8 @@ import React from "react";
 import FoodCarts from "../Restaurents/FootCarts";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
+
 const Body = () => {
   const [restaurantList, setRestaurantList] = useState([]);
   const [searchtext, setSearchtext] = useState("");
@@ -74,7 +76,7 @@ const Body = () => {
         </button>
       </div>
       {filterRes.map((restaurants, index) => (
-        <FoodCarts key={index} resData={restaurants} />
+        <Link to={"/resturantMenu/" + restaurants.info.id}><FoodCarts key={index} resData={restaurants} /></Link>
       ))}
     </div>
   );
