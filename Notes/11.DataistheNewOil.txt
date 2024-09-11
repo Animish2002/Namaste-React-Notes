@@ -1,0 +1,15 @@
+higher order component => higher order component is component which takes a component 
+                        (input) inside and returns a component 
+
+export const higherOrderCom = (TakeThisComponent) => {
+  return () => {  // This returns a new component here
+    return (
+      <div> {/* The new component returned */}
+        <TakeThisComponent /> {/* Original component is used here */}
+      </div>
+    );
+  };
+};
+
+used to enhance the component , ui, passing some extra props without changeing the code 
+for the higher order component

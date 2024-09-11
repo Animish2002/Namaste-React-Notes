@@ -1,0 +1,6 @@
+use for state management of the application(large scale applications)
+A predectiable state container for js application (works with all the js libraries and framework)
+
+2 libraries offered by redux
+1. React redux => kind of bridge between the react and redux
+2. Redux Toolkit => 

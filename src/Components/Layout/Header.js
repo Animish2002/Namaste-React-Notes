@@ -6,20 +6,20 @@ const Header = () => {
   const [loginButton, setLoginButton] = useState("Login");
 
   return (
-    <div className="header-components">
-      <img className="food-app-logo" src={logo} alt="food-app-logo" />
+    <div className="flex flex-wrap justify-between py-2 items-center bg-blue-100 shadow-lg border-collapse">
+      <img className="w-[170px]" src={logo} alt="food-app-logo" />
 
-      <ul>
-        <li>
+      <ul className="flex gap-4">
+        <li className="text-xl px-4 py-6 hover:underline ">
           <Link to={"/"}>Home</Link>
         </li>
-        <li>
+        <li className="text-xl px-4 py-6 hover:underline">
           <Link to={"/about"}>About</Link>
         </li>
-        <li>
+        <li className="text-xl px-4 py-6 hover:underline">
           <Link to={"/contact"}>Contact-Us</Link>
         </li>
-        <li>Cart</li>
+        <li className="text-xl px-4 py-6 hover:underline">Cart</li>
         <button
           className="login-btn"
           onClick={() => {
