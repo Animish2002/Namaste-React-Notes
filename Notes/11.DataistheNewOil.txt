@@ -13,3 +13,9 @@ export const higherOrderCom = (TakeThisComponent) => {
 
 used to enhance the component , ui, passing some extra props without changeing the code 
 for the higher order component
+
+A controlled component in React is one where the component's state (such as the value of a form input)
+is fully controlled by React via props and state. Instead of the component managing its own state 
+internally, it receives its current value from its parent component and reports changes back to the 
+parent. The parent component then updates the state, which in turn re-renders the child component 
+with the updated state.

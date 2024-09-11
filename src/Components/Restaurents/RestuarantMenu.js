@@ -39,13 +39,15 @@ const RestaurantMenu = () => {
     resInfo?.cards?.[2]?.card?.card?.info || {};
 
   return (
-    <div className="mt-12 text-center">
+    <div className="mt-12 text-center ">
       <span className="text-2xl font-bold">{name}</span>
-      <p className="text-lg">{cuisines?.join(", ")}</p>
-      <p>{costForTwoMessage}</p>
+      <p className="text-lg ">{cuisines?.join(", ")}</p>
+      <p className="text-lg inline-block">{costForTwoMessage}</p>
 
-      {categories.map((category) => (
-        <RestaurentCategory data={category?.card?.card} />
+      {categories.map((category, index) => (
+        <div key={index}>
+          <RestaurentCategory data={category?.card?.card} />
+        </div>
       ))}
     </div>
   );
