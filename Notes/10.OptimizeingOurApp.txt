@@ -1,2 +1,8 @@
 custom Hooks name the files or function as useSomething Something 
 make it a function and import in the component that needed to be  used for direclty
+
+
+Custom Hooks
+Naming Convention: Custom hooks should always start with useSomething, e.g., useCart, useUserData, etc.
+
+Functionality: Custom hooks are functions that encapsulate reusable logic. They can be imported and used in components directly.

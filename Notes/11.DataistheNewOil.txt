@@ -19,3 +19,31 @@ is fully controlled by React via props and state. Instead of the component manag
 internally, it receives its current value from its parent component and reports changes back to the 
 parent. The parent component then updates the state, which in turn re-renders the child component 
 with the updated state.
+
+Props Drilling =>  Prop drilling refers to the process of passing down props through multiple layers
+ of components, even when some of those components do not directly use the props.
+
+ How to Overcome Prop Drilling
+ 1.Context API: 
+ 2.State Management Libraries: 
+ 3.Higher-Order Components (HOCs):
+ 4.Render Props:
+
+ creating contextAPI
+  1.const MyContext = createContext({
+    passingValue: "Something",
+  });
+
+ 2. using in other components 
+ accquire the nameOfArgument and import useContext 
+ get the value
+  const { passingValue } = useContext(MyContext);
+  console.log(passingValue); // Logs "Something"
+
+ 3. globally adding the value
+
+  const MyContext = createContext();
+
+  <MyContext.Provider value={{ passingValue: "Something" }}>
+    <AnotherComponent />
+  </MyContext.Provider>    here we can also pass the states values from any other component to all others

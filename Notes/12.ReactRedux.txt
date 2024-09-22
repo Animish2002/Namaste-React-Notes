@@ -4,3 +4,58 @@ A predectiable state container for js application (works with all the js librari
 2 libraries offered by redux
 1. React redux => kind of bridge between the react and redux
 2. Redux Toolkit => 
+
+redux tookit (rtk)
+redux store => a big whole big object kept at  a central global place 
+that big object is divided into different part know as slices 
+A Slice can be many different things like a cart , card, user, theme etc etc
+
+example for add to cart in an ecommerce
+how to write data
+1. Click on item add to cart
+2. Action is dispatched
+3. the action calls a function (know as reducer)
+4. And this function modifies the slice of our reudux store here it is cart 
+
+how to read data
+for this we use a selector to read the data from our store 
+and modify or print the required value (term also know as subscribing to the store)
+
+Add to Cart Flow:
+                                                            (function)
+[User Clicks "Add to Cart"]  --->  [Dispatch Action]  --->  [Reducer]  --->  [Modify Cart Slice]
+
+Read Data Flow:
+
+[Use Selector]  --->  [Get Cart Data from Store]  --->  [Use Data in Component]
+
+# Redux Toolkit
+- libraries => @ruduxjs/toolkit, react-redux
+- Build our store
+- Connect our store to our app (make a bridge)
+- Create a cart slice
+- Dispatch an action
+- Read data using selector
+
+
+1. created a appStore with a function appStore used configureStore there and confired it
+2. add provider in app.js to connect react with rtk
+3. create slice
+4. inside slice create cart slice using createSlice for a function add the configuration name of the slices 
+4. slices to add cart as name, initial state of that slice , create a reducers object inside function create the 
+actions and reducer functions 
+5. actions include with example cart add item , remove , clear the cart
+example: reducers: {
+    addItem: (state,action) => {        //modify the state using the action
+        this is the reducer function
+    }
+}
+write them  the actions and export at the end 
+export const {addItems,remove,clear} = cartSlice.action;
+also export the reducer
+export default cartSlice.reducer;
+
+6. add this created and exported reducer to the appStore where we write all the reducers
+
+use in react to read data use a selector to subscribe to our store
+use hook selector which is inside react (a hook is a normal js function)

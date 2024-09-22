@@ -9,6 +9,8 @@ import Body from "./src/Components/Layout/Body";
 import Header from "./src/Components/Layout/Header";
 import RestuarantMenu from "./src/Components/Restaurents/RestuarantMenu";
 import { StrictMode } from "react";
+import { Provider } from "react-redux";
+import appStore from "./src/utils/Redux/appStore";
 
 const appRouter = createBrowserRouter([
   {
@@ -42,7 +44,9 @@ const appRouter = createBrowserRouter([
 const root = createRoot(document.getElementById("root"));
 
 root.render(
-  <StrictMode>
-    <RouterProvider router={appRouter} />
-  </StrictMode>
+  <Provider store={appStore}>
+    <StrictMode>
+      <RouterProvider router={appRouter} />
+    </StrictMode>
+  </Provider>
 );

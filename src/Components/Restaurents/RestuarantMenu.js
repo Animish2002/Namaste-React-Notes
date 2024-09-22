@@ -6,6 +6,7 @@ import RestaurentCategory from "./RestaurentCategory";
 
 const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState(null);
+  const [showIndex, setshowIndex] = useState(null);
   const { restId } = useParams();
 
   useEffect(() => {
@@ -46,7 +47,11 @@ const RestaurantMenu = () => {
 
       {categories.map((category, index) => (
         <div key={index}>
-          <RestaurentCategory data={category?.card?.card} />
+          <RestaurentCategory
+            data={category?.card?.card}
+            showItems={index === showIndex ? true : false}
+            setshowIndex={() => setshowIndex(index)}
+          />
         </div>
       ))}
     </div>
